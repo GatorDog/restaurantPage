@@ -1,0 +1,160 @@
+.banner {
+    background-color:#9eddff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+}
+
+#homeNav {
+    text-align: center;
+    position:relative
+}
+
+#menuNav {
+    text-align: center;
+}
+
+#contactNav {
+    text-align: center;
+
+}
+
+.paragraphText {
+    border-radius: 10px;
+    background-color: #9eddff;
+    box-shadow: 5px 5px 5px black;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align:center;
+    font-size: 1.5em;
+    margin-right: 10%;;
+    margin-left: 10%;
+}
+
+#homeSummary {
+    margin-top: 5%;
+}
+
+#foodImages {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+.foodImage {
+    width: 50%;
+    min-width: 200px;
+    height: auto;
+    justify-self: center;
+    border-radius: 15px;
+    margin-top: 5%;
+    box-shadow: 5px 5px 5px black;
+}
+
+@media only screen and (max-width: 700px){
+    .foodImage {
+        justify-self: center;
+        
+    }
+
+    #homeSummary{
+        font-size: 1em;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .paragraphText {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+}
+
+body {
+    margin-top: 0px;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-image:url(https://wallpaperaccess.com/full/2255.jpg);
+    max-height: 100%;
+}
+
+#content{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px auto;
+    column-gap: 25px;
+}
+@media only screen and (max-width: 700px){
+    #content{
+        grid-template-columns: 100%;
+        grid-template-rows: 50px auto 1fr;
+        column-gap: 0px;
+    }
+
+}
+
+#map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:  75%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black
+}
+
+@media only screen and (max-width: 700px){
+    #map{
+        width: 100%;
+    }
+
+}
+
+#sushi4, #contactMap {
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+
+#menuText, #addressPhone {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color:#9eddff;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 5%;
+}
+
+@media only screen and (max-width: 700px){
+    #sushi4 {
+        width: 100%;
+    }
+    
+    #menuText {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    #contactMap {
+        width: 100%;
+    }
+
+}
+
+
+#addressPhone {
+
+
+}
