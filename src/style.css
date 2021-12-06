@@ -11,19 +11,18 @@
     font-family: 'Oswald', sans-serif;
 }
 
-#homeNav {
-    text-align: center;
-    position:relative
-}
-
-#menuNav {
+#homeNav, #menuNav, #contactNav {
     text-align: center;
 }
-
-#contactNav {
-    text-align: center;
-
+#homeNav:hover, #menuNav:hover, #contactNav:hover {
+    background-color:#5fc7ff;
 }
+
+#homeNav:active, #menuNav:active, #contactNav:active {
+    background-color:#2bb5ff;
+}
+
+
 
 .paragraphText {
     border-radius: 10px;
@@ -114,8 +113,18 @@ body {
 
 }
 
-#sushi4, #contactMap {
+#sushi4 {
     width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+
+#contactMap {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -153,8 +162,12 @@ body {
 
 }
 
-
-#addressPhone {
-
-
-}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }

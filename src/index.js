@@ -19,6 +19,7 @@ function generateHeader() {
 
     const topBanner = document.createElement('nav');
     topBanner.classList.add('banner');
+    topBanner.classList.add('noselect')
     topBanner.appendChild(homeNav);
     topBanner.appendChild(menuNav);
     topBanner.appendChild(contactNav);
@@ -52,6 +53,7 @@ function generateHeader() {
 function initializePage() {
     const content = document.getElementById('content');
     content.appendChild(generateHeader());
+    generateHome();
 }
 
 initializePage();
